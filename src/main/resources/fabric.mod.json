@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "arrowentitylootdrop",
+  "version": "${version}",
+
+  "name": "Arrow Entity Loot Drop",
+  "description": "Makes Entities shot with Arrows drop them upon death",
+  "icon": "assets/arrowentitylootdrop/icon.png",
+  "authors": [
+    "Pepperoni__Jabroni__"
+  ],
+  "contact": {
+    "homepage": "https://www.curseforge.com/minecraft/mc-mods/map-atlases",
+    "sources": "https://github.com/Pepperoni-Jabroni/MapAtlases",
+    "issues": "https://github.com/Pepperoni-Jabroni/MapAtlases/issues"
+  },
+
+  "license": "GPL-3.0",
+
+  "environment": "*",
+  "entrypoints": {},
+  "mixins": [
+    "arrowentitylootdrop.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.14.6",
+    "fabric": "*",
+    "minecraft": "~1.19",
+    "java": ">=17"
+  }
+}

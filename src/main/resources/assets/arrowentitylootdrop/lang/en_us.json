@@ -1,0 +1,7 @@
+{
+  "text.autoconfig.arrow_entity_loot_drop.title": "Arrow Entity Loot Drop Settings",
+  "text.autoconfig.arrow_entity_loot_drop.option.arrowBreakingChance": "Arrow Breaking Chance",
+  "text.autoconfig.arrow_entity_loot_drop.option.arrowBreakingChance.@Tooltip": "The chance an Arrow stored in an Entity will NOT drop. Range: 0-100",
+  "text.autoconfig.arrow_entity_loot_drop.option.preserveNonDefaultArrows": "Preserve Non-Default Arrows",
+  "text.autoconfig.arrow_entity_loot_drop.option.preserveNonDefaultArrows.@Tooltip": "When this is true, Spectral + Tipped Arrows will drop. If false, they will drop as regular Arrows instead"
+}

@@ -10,15 +10,18 @@
     "Pepperoni__Jabroni__"
   ],
   "contact": {
-    "homepage": "https://www.curseforge.com/minecraft/mc-mods/map-atlases",
-    "sources": "https://github.com/Pepperoni-Jabroni/MapAtlases",
-    "issues": "https://github.com/Pepperoni-Jabroni/MapAtlases/issues"
+    "homepage": "https://www.curseforge.com/minecraft/mc-mods/arrow-entity-loot-drop",
+    "sources": "https://github.com/Pepperoni-Jabroni/ArrowEntityLootDrop",
+    "issues": "https://github.com/Pepperoni-Jabroni/ArrowEntityLootDrop/issues"
   },
 
   "license": "GPL-3.0",
 
   "environment": "*",
-  "entrypoints": {},
+  "entrypoints": {
+    "main": ["pepjebs.arrowentitylootdrop.ArrowEntityLootDropMod"],
+    "modmenu": ["pepjebs.arrowentitylootdrop.config.ArrowEntityLootDropModMenuApiImpl"]
+  },
   "mixins": [
     "arrowentitylootdrop.mixins.json"
   ],

@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/17690401/209389114-803e7728-4a61-43c3-ba77-886387682740.png">
+  <img src="https://user-images.githubusercontent.com/17690401/209389699-11105535-36c9-458b-b579-485783b853e8.png">
   </br></br>
   This mod makes Entities shot with Arrows drop them upon death!
   </br></br>

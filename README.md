@@ -11,6 +11,11 @@
 ## 📖 About
 This has always bugged me about Minecraft combat and makes Infinity feel like a requirement. Why does the game punish you for being accurate? Missed arrows can be recovered, why not hits?
 
+The current probabilities by default are (see config to change):
+- 25% your arrow breaks (is not dropped when the entity is killed)
+- 50% your arrow is dropped as a regular arrow
+- 25% your arrow type is preserved too (keeps spectral or tipped)
+
 NOTE: This mod makes no attempt to serialize the arrows contained by entities - as a result, server reboots will remove all entity-arrow data.
 
 ## 📃 Changelog

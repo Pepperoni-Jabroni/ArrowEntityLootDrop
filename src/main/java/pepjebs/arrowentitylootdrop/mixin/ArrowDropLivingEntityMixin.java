@@ -35,12 +35,12 @@ public class ArrowDropLivingEntityMixin {
         }
         // Don't add if it "breaks"
         if (ArrowEntityLootDropMod.CONFIG != null
-                && (new Random()).nextFloat() < ArrowEntityLootDropMod.CONFIG.arrowBreakingChance / 100.0f) {
+                && (new Random()).nextFloat() < ArrowEntityLootDropMod.CONFIG.arrowBreakingChance) {
             return;
         }
         // Only add default arrow if set
         if (ArrowEntityLootDropMod.CONFIG != null
-                && !ArrowEntityLootDropMod.CONFIG.preserveNonDefaultArrows) {
+                && (new Random()).nextFloat() < (1.0f - ArrowEntityLootDropMod.CONFIG.preserveNonDefaultChance)) {
             addToArrowsInEntity(new ItemStack(Items.ARROW));
             return;
         }

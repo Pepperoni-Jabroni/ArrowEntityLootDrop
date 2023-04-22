@@ -10,11 +10,11 @@ import pepjebs.arrowentitylootdrop.ArrowEntityLootDropMod;
 public class ArrowEntityLootDropConfig implements ConfigData {
 
     @ConfigEntry.Gui.Tooltip()
-    @Comment("The chance an Arrow stored in an Entity will NOT drop. Range: 0-100")
-    public int arrowBreakingChance = 0;
+    @Comment("The chance an Arrow stored in an Entity will NOT drop. Range: 0-1 (0%-100%)")
+    public float arrowBreakingChance = 0.25f;
 
     @ConfigEntry.Gui.Tooltip()
-    @Comment("When this is true, Spectral + Tipped Arrows will drop. If false, they will drop as regular Arrows instead")
-    public boolean preserveNonDefaultArrows = true;
+    @Comment("The chance of the non-default arrow persisting when dropped after entity kill. Range: 0-1 (0%-100%)")
+    public float preserveNonDefaultChance = 0.25f;
 
 }

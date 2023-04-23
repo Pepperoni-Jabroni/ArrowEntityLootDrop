@@ -9,7 +9,7 @@
 </p>
 
 ## 📖 About
-This has always bugged me about Minecraft combat and makes Infinity feel like a requirement. Why does the game punish you for being accurate? Missed arrows can be recovered, why not hits?
+This has always bugged me about Minecraft combat and makes Infinity feel like a requirement. Why does the game punish you for being accurate? Missed arrows can be recovered, why not hits? Please note Arrows which would not have been possible for the Player to pick up (e.g. Skeleton shot, Infinity, etc) will not be stored or dropped - this would be cheaty.
 
 The current probabilities by default are (see config to change):
 - 25% your arrow breaks (is not dropped when the entity is killed)

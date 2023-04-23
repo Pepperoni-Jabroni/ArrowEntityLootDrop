@@ -18,6 +18,9 @@ The current probabilities by default are (see config to change):
 
 NOTE: This mod makes no attempt to serialize the arrows contained by entities - as a result, server reboots will remove all entity-arrow data.
 
+## ⚙️ Config
+The mod is highly configurable and offers in-game config editing with ModMenu. See the current config [options here](https://github.com/Pepperoni-Jabroni/ArrowEntityLootDrop/blob/main/src/main/java/pepjebs/arrowentitylootdrop/config/ArrowEntityLootDropConfig.java)!
+
 ## 📃 Changelog
 Changelogs are available [at the GitHub Releases section](https://github.com/Pepperoni-Jabroni/ArrowEntityLootDrop/releases)
 

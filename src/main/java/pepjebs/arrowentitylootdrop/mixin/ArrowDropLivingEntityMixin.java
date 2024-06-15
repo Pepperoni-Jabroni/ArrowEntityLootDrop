@@ -46,7 +46,7 @@ public class ArrowDropLivingEntityMixin {
         }
         // Preserve arrow type
         if (srcEntity instanceof ArrowEntity) {
-            ItemStack damagingArrow = ((InvokerArrowEntityMixin) srcEntity).getArrowItemStack();
+            ItemStack damagingArrow = ((ArrowEntity) srcEntity).getItemStack();
             addToArrowsInEntity(damagingArrow);
         } else {
             addToArrowsInEntity(new ItemStack(Items.SPECTRAL_ARROW));

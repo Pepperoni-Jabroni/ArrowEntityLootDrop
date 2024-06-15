@@ -4,8 +4,7 @@
   "package": "pepjebs.arrowentitylootdrop.mixin",
   "compatibilityLevel": "JAVA_17",
   "mixins": [
-    "ArrowDropLivingEntityMixin",
-    "InvokerArrowEntityMixin"
+    "ArrowDropLivingEntityMixin"
   ],
   "injectors": {
     "defaultRequire": 1

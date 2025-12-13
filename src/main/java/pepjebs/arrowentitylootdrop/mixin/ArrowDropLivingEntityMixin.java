@@ -8,6 +8,7 @@ import net.minecraft.entity.projectile.PersistentProjectileEntity;
 import net.minecraft.entity.projectile.SpectralArrowEntity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
+import net.minecraft.server.world.ServerWorld;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
@@ -25,7 +26,7 @@ public class ArrowDropLivingEntityMixin {
 
 
     @Inject(method = "applyDamage", at = @At("TAIL"))
-    public void addArrowsOnDamage(DamageSource source, float amount, CallbackInfo ci) {
+    public void addArrowsOnDamage(ServerWorld world, DamageSource source, float amount, CallbackInfo ci) {
         var srcEntity = source.getSource();
         // Ensure arrow
         if (!(srcEntity instanceof ArrowEntity || srcEntity instanceof SpectralArrowEntity)
@@ -57,8 +58,8 @@ public class ArrowDropLivingEntityMixin {
     public void dropArrowsOnKill(DamageSource damageSource, CallbackInfo ci) {
         if (!arrowsInEntity.isEmpty()) {
             for (var stack : arrowsInEntity) {
-                entity.getWorld().spawnEntity(new ItemEntity(
-                        entity.getWorld(),
+                entity.getEntityWorld().spawnEntity(new ItemEntity(
+                        entity.getEntityWorld(),
                         entity.getX(),
                         entity.getY(),
                         entity.getZ(),
